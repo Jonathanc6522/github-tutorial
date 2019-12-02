@@ -5,6 +5,9 @@ _by Jonathan Cutler_
 ---
 ## Git vs. GitHub
 If Git is your camera, GitHub is your camera roll. Git is a tool you can use while you code; it's a system to help with version control. GitHub is the website linked to the system to help with visualizing what you do.  
+
+Essentially, **Git** is your version control. --Doesn't require GitHub.-- **GitHub** is your human way to moniter the versions, while also allowing you to work with others and store code online. --Does require Git.--
+
 But enough about Git & GitHub. Let's talk how to start using 'em.  
 
 ---
@@ -39,8 +42,13 @@ Ok then, you should be all good for the next part!
 
 ---
 ## Repository Setup
+Let's see here, here's a little bit about a repository (a repo). A repo is like a normal folder, but with a spin on it. You can put a folder in a folder, a folder in a directory, and a directory in a folder, but you can't put a directory inside another directory
 
 
+Now, get into your ide and GitHub and do the following:  
+* **in GitHub**  
+-- make new directory  
+-- make a title
 
 ---
 ## Workflow & Commands
