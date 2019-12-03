@@ -68,6 +68,30 @@ Now, get into your ide and GitHub and do the following:
 ## Workflow & Commands
 
 
+You may be asking what the heck you just did. I'm gonna tell you now, because it's important to do it right, *then* know what you did after the fact. (at least to me.)  
+so here's the gist; 
+* GitHub is a remote server; it saves data no matter what device you're accessing it from, so long as you're logged in  
+* * I had you make the repo without a README.md file so you could learn how to make similar files on your own. (if you skipped it and made it in GitHub anyway, `touch _____` is the command in question)
+* * **git remote add origin url**  
+ -- **git** is a command that uses git  
+ -- **remote** means that this repo is connected from our local ide to the external one on GitHub  
+ -- **add** is to specify that we are adding this repo  
+ -- **origin** is the 'nickname' for this remote. origin is basically a universal default, though you may need more than one remote in the future.  
+ -- **url** is the location of the repo. (this could be HTTPS or SSH. HTTPS is a temporary connection you'd have to redo, while SSH is more permanent.)
+* * **git push -u origin master**  
+ -- **git** is a command that uses git  
+ -- **push** is to commit the changes & commits to the external repo  
+ -- **-u** means "upstream." it's to tell git to remember the remote we are pushing our updates to from what branch in the terminal. (this way, we only have to type `git push` in future commits to the external repo.)  
+ -- **origin** the remote we are pushing to  
+ -- **master** the "main" branch of this effort  
+
+#### Commands
+
+-- `git add`: is to stage changes made to where you are in the branch.  
+-- `git commit -m "____"`: is to save the changes locally in the ide.  
+-- `git status`: although not necessary, it's great to get into the habit of as it tells you what is and is not on stage for commitment.  
+-- `git push`: pushes your commits to the external repo.  
+-- `git pull`: pulls your work from the external repo to your local ide so you can edit.
 
 ---
 ## Rolling Back Changes
