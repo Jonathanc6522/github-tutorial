@@ -42,18 +42,32 @@ Ok then, you should be all good for the next part!
 
 ---
 ## Repository Setup
-Let's see here, here's a little bit about a repository (a repo). A repo is like a normal folder, but with a spin on it. You can put a folder in a folder, a folder in a directory, and a directory in a folder, but you can't put a directory inside another directory
+Ok, now we're starting to get a lil more personal work wise. *I found this easy at first by comparing it to running through files in my own computer (like with video game configs and such)*
 
 
 Now, get into your ide and GitHub and do the following:  
 * **in GitHub**  
--- make new directory  
--- make a title
+-- make new repository  
+-- make a title  
+-- make sure it's empty; NO README.md files or anything like that  
+-- you should see an option to...  
+`[insert snapshot]`  
+   you'll want to click the copy to clipboard button, that'll be all you have to do on GitHub for now.
+
+
+* **in your ide**  
+-- `mkdir ______` makes a directory with whatever you decide to call it.  
+-- `cd _______` takes you from the root terminal (~~) to the directory you entered the name of.  
+-- enter `git init` to initialize the directory with git and make it into a repo. You should see `(master)` next to where it tells you where you're working from.
+-- then do `touch README.md` this will create a text file that you can edit the content of with a `c9 _____` command.  
+-- then do `git add` to stage your changes.  
+-- enter `git commit -m "______"` as a commit message. Although not imperative, it's a good habit to commit in the present tense. (`git commit -m "finish repo setup section"`)  
+-- remember the last instruction from  **"in GitHub?"** well, now you're going to want to copy past what you did from before.
 
 ---
 ## Workflow & Commands
 
-`[wip]`
+
 
 ---
 ## Rolling Back Changes
