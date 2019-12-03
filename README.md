@@ -20,12 +20,24 @@ do **NOT** copy paste! It may commit things you don't want to have actually put 
 2. Enter `` git config --global user.email "______@____.___"``  *(your email)*
 3. Enter `` git config -- global user.name "____ ____"`` *(your name)*
 4. Enter `` ssh-keygen -t rsa -b 4096 -C "______@____.___"``  *(same email)* and press ``enter`` until you see something like this:  
-``[insert snapshot]``
+```
+      +--[ RSA 4096]----+
+      |       .o o..    |
+      |       o +Eo     |
+      |        + .      |
+      |         . + o   |
+      |        S o = * o|
+      |           . o @.|
+      |            . = o|
+      |           . o   |
+      |            o.   |
+      +-----------------+
+```
+
 5. Enter `` eval "$(ssh-agent -s)"``
 6. Enter `` ls -al ~/.ssh``
 7. Enter `` cat ~/.ssh/id_rsa.pub`` and copy ***all*** results  (starting with ssh-rsa and ending with your email)  
 8. In GitHub, make a new SSH key, title it "ide50" and where it says key, paste your results.  
-``[insert snapshot]``
 9. Back in your ide, enter `` sudo nano ~/.ssh/config``
 10. copy/paste the following:  
 ```
@@ -50,8 +62,8 @@ Now, get into your ide and GitHub and do the following:
 -- make new repository  
 -- make a title  
 -- make sure it's empty; NO README.md files or anything like that  
--- you should see an option to...  
-`[insert snapshot]`  
+-- you should see an option that reads..  
+"**...or push an existing repository from the command line**"  
    you'll want to click the copy to clipboard button, that'll be all you have to do on GitHub for now.
 
 
@@ -96,5 +108,9 @@ so here's the gist;
 ---
 ## Rolling Back Changes
 
-`[wip]`
+Every now and again, you're gonna mess up. Whether it be an unwanted commit, or a screw up you were unaware of, you have to know how to roll back your code:  
 
+`git revert (a commit message)`: revert a portion of your work to that specific commit.  
+`git reset --soft HEAD~1`: remove a file commit from the branch without changing the file.  
+`git reset HEAD ______`(filename): undo any changes before you entered `git add .`  
+`git reset --hard HEAD~1`: this will remove all of the unsaved changes, as well as those from the last commit.
